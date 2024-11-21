@@ -10,7 +10,7 @@ database:
 #  show_line: true
 #  log_in_console: true
 
-app:
+system:
   name: gv_blog
-  port: 8080
+  port: :8080
   env: dev

@@ -20,9 +20,9 @@ type Config struct {
 	//	LogInConsole bool //是否显示打印的路径
 	//}
 
-	App struct {
+	System struct {
 		Name string
-		Port int
+		Port string
 		Env  string
 	}
 }
