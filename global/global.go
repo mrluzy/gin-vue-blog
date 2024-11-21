@@ -1,3 +1,7 @@
 package global
 
-var ()
+import "gorm.io/gorm"
+
+var (
+	Db *gorm.DB
+)
