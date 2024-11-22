@@ -14,6 +14,7 @@ func SetupRouter() *gin.Engine {
 	api := r.Group("/api")
 	routerGroupApp := RouterGroup{api}
 
+	//配置路由
 	routerGroupApp.SettingRouter()
 	return r
 }
