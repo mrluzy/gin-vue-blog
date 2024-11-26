@@ -1,6 +1,7 @@
 package config
 
 import (
+	"gin-vue-blog/utils/res"
 	"github.com/spf13/viper"
 	"log"
 )
@@ -42,5 +43,9 @@ func InitConfig() {
 	if err := viper.Unmarshal(AppConfig); err != nil {
 		log.Fatalf("Error unmarshalling config: %v", err)
 	}
+
+	//初始化数据库
 	initDB()
+	//初始化错误码
+	res.ReadErrorCodeJson()
 }
